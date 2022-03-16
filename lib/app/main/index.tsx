@@ -6,6 +6,9 @@ export const AppMain = ({ Component, pageProps }: AppProps): JSX.Element => (
 		className={[
 			"prose dark:prose-invert",
 			"prose-headings:relative",
+			"prose-headings:lg:leading-tight",
+			"prose-headings:xl:leading-tight",
+			"prose-headings:2xl:leading-tight",
 			"prose-a:decoration-gray-400 prose-a:underline-offset-2",
 			// Layout
 			"mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32",
