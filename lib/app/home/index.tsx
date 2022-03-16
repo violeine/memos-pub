@@ -1,13 +1,8 @@
-// import Markdown from "./body.md";
+import { mdxNextComponents } from "@/lib/mdx/utils/components";
+import Markdown from "./body.mdx";
 import { useAppHomeRedirect } from "./redirect";
-import { AppHomeTry } from "./try";
 
 export const AppHome = (): JSX.Element => {
 	useAppHomeRedirect();
-	return (
-		<div>
-			<AppHomeTry />
-			{/* <Markdown /> */}
-		</div>
-	);
+	return <Markdown components={mdxNextComponents} />;
 };
